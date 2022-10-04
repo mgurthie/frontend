@@ -20,8 +20,8 @@
     "react-dom": "16.14.0",
     "reactstrap": "^8.6.0"
   },
-  "description": "Exercise05 is full Shopping Cart with Stripe Billing",
+  "description": "Michael Gurthie's MIT Capstone Project",
   "main": "index.js",
-  "author": "jrw@mit.edu",
+  "author": "mgurthie@wbtv.com",
   "license": "MIT"
 }
