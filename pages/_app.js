@@ -20,7 +20,7 @@ function MyApp(props){
   addItem = (item) => {
     let { items } = state.cart;
     //check for item already in cart
-    //if not in cart, add item if item is found increase quantity ++
+    //if not in cart, add item if item is found increase quanity ++
     let foundItem = true;
     if(items.length > 0){
       foundItem = items.find((i) => i.id === item.id);
@@ -85,7 +85,7 @@ function MyApp(props){
   }
 
   return (
-    <AppContext.Provider value={{cart: state.cart, addItem: addItem, removeItem: removeItem,isAuthenticated,user,setUser, setIsAuthenticated, notification, setNotification}}>
+    <AppContext.Provider value={{cart: state.cart, addItem: addItem, removeItem: removeItem,isAuthenticated:false,user:userInfo, setIsAuthenticated, notification, setNotification}}>
       <Head>
         <link
           rel="stylesheet"
@@ -105,8 +105,8 @@ function MyApp(props){
 }
 
 
-export default MyApp; */
-
+export default MyApp;
+ */
 
 
 import { useContext, useState } from "react";
@@ -128,7 +128,7 @@ function MyApp(props){
   addItem = (item) => {
     let { items } = state.cart;
     //check for item already in cart
-    //if not in cart, add item if item is found increase quantity ++
+    //if not in cart, add item if item is found increase quanity ++
     let foundItem = true;
     if(items.length > 0){
       foundItem = items.find((i) => i.id === item.id);
