@@ -63,8 +63,7 @@ const GET_RESTAURANT_DISHES = gql`
                 </CardBody>
                 <div className="card-footer">
                   <Button color="info"
-                    outline
-                    color="primary"
+                    outline 
                     onClick = {()=> addItem(res)}
                   >
                     + Add To Cart
